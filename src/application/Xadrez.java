@@ -1,14 +1,14 @@
 package application;
 
-import boardgame.Board;
-import boardgame.Position;
+import chess.ChessMatch;
 
 public class Xadrez {
 
 	public static void main(String[] args) {
 
-		Board board = new Board(8, 8);
-	
+		ChessMatch chessMatch = new ChessMatch();
+		// UI = User interface (Inteface do usuário) - Classe
+		UI.printBoard(chessMatch.getPieces());
 	}
 
 }
