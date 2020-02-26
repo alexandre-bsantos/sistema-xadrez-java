@@ -6,7 +6,7 @@ public class Board {
 	private int columns;
 	private Piece [][] pieces;
 
-	public Board(int rows, int columns) throws BoardException{
+	public Board(int rows, int columns) {
 		if (rows < 1 || columns < 1) {
 			throw new BoardException("Error creating board: There must be at least 1 row and 1 column");
 		}
