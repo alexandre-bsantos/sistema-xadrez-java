@@ -20,7 +20,7 @@ public class Xadrez {
 		
 		while (!chessMatch.getCheckMate()) {
 		
-			try {
+			//try {
 				UI.clearScreen();
 				// UI = User interface (Inteface do usuário) - Classe
 				UI.printMatch(chessMatch, captured);
@@ -41,17 +41,17 @@ public class Xadrez {
 				if (capturedPiece != null) {
 					captured.add(capturedPiece);
 				}
-			}
-			catch(ChessException e) {
-				System.out.println(e.getMessage());
+			//}
+			//catch(ChessException e) {
+				//System.out.println(e.getMessage());
 				System.out.println("Please, press Enter to continue.");
 				sc.nextLine();
-			}
-			catch(InputMismatchException e) {
-				System.out.println(e.getMessage());
+			//}
+			//catch(InputMismatchException e) {
+				//System.out.println(e.getMessage());
 				System.out.println("Please, press Enter to continue.");
 				sc.nextLine();
-			}	
+			//}	
 		}
 		UI.clearScreen();
 		UI.printMatch(chessMatch, captured);
